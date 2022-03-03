@@ -1,6 +1,6 @@
 public class hm3 {
     public static void main(String[] args ) {
-        long t = 10000000000020L;
+        long t = 10000000020L;
         long t1;
         long sY = 31536000L;
         //  int sM = 2592000;
