@@ -122,8 +122,8 @@ public class hm11_5 {
         String trm1;
         BufferedWriter f100 = new BufferedWriter(new FileWriter(trm + "all.txt"));
 
-        String s15 = Integer.toString(random.nextInt(1000));
-        f100.append(s15);
+  //      String s15 = Integer.toString(random.nextInt(1000));
+   //     f100.append(s15);
 
 
         for (int i = 1; i <= 5 ; i++) {
@@ -135,10 +135,12 @@ public class hm11_5 {
 
             System.out.println(str + "   " + trm1);
             f100.write(str);
-            f100.append("//n");
+            f100.append("\n");
    //         f100.append("1");
 
         }
+        f100.close();
+
 
         BufferedWriter f91 = new BufferedWriter(new FileWriter(trm + "files.txt"));
         File f90 = new File(trm);
@@ -146,12 +148,12 @@ public class hm11_5 {
         for (String st: list) {
 
             f91.append(st);
-            f91.write(st);
-            f91.append("//n");
+     //       f91.write(st);
+            f91.append("\n");
             System.out.println(st);
 
         }
-
+        f91.close();
     //    System.out.println(str + "   " + trm1 );
 
     }
