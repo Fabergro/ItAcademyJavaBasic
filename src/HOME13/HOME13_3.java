@@ -7,7 +7,7 @@ public class HOME13_3 {
     public static void main(String[] args) {
         int summaElement = 200;
         int element = 0;
-
+  //      System.out.println();
         while (summaElement <= 5000) {
             (new Thread(new MyThreadGet("Производитель 1", element))).run();
             summaElement += 100;

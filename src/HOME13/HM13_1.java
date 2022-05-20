@@ -7,6 +7,7 @@ public class HM13_1 {
         for (int i = 1; i < 11; i++) {
             new MyThread("Поток " + i).start();
         }
+        System.out.println();
     }
 
 }
